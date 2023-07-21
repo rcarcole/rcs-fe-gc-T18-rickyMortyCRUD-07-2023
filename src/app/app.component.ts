@@ -58,7 +58,7 @@ const characters = [
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  providers: [NgbTypeaheadConfig], // add NgbTypeaheadConfig to the component providers
+  providers: [NgbTypeaheadConfig],
 })
 export class AppComponent {
 
@@ -69,7 +69,6 @@ export class AppComponent {
   public model: any;
 
 	constructor(config: NgbTypeaheadConfig) {
-		// customize default values of typeaheads used by this component tree
 		config.showHint = true;
 	}
 
